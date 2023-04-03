@@ -1,0 +1,70 @@
+.writeTweet-container{
+    position: relative;
+    display: flex;
+    padding: 10px 15px;
+    gap: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 30px;
+}
+
+.writeTweet-container .inputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.writeTweet-container .inputContainer textarea{
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    font-size: var(--font-size_title);
+    padding: 15px 0;
+    resize: none;
+}   
+
+.writeTweet-container .inputContainer textarea:focus{
+    outline: none;
+}
+
+.writeTweet-container .inputContainer textarea::placeholder{
+    color: var(--gray);
+}
+
+.writeTweet-container .inputContainer textarea::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--lightblue);
+    border-radius: 10px;
+}
+
+.writeTweet-container .inputContainer textarea::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.writeTweet-container button{
+    width: max-content;
+    border: none;
+    border-radius: 30px;
+    padding: 6px 20px;
+    font-size: var(--font-size_title);
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.writeTweet-container button:hover{
+    opacity: .7;
+    transition: .2s;
+}
+
+.replyTweet-container{
+    border: none;
+}
+
+.replyTweet-container .tweet-avatar img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}

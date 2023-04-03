@@ -1,0 +1,143 @@
+.tweet-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--gray);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.tweet-container a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+.tweet-avatar{
+    display: flex;
+    align-items: flex-start;
+}
+
+.tweet-avatar img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.tweet-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    gap: 8px;
+    color: var(--white);
+}
+
+.tweet-body_content p{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tweet-deleteBtn{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 50%;
+    padding: 2px 4px;
+    z-index: 1000;
+}
+
+.tweet-deleteBtn:hover{
+    background-color: var(--red);
+    opacity: .5;
+    transition: .2s;
+}
+
+.tweet-deleteBtn img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.tweet-body_footer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+}
+
+.tweet-body_footer button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+.tweet-body_footer button:hover {
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.tweet-body_footer img{
+    height: 20px;
+    width: 20px;
+}
+
+.tweet-body_footer__number{
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    color: var(--white);
+}
+
+.tweet-container:hover {
+    background-color: var(--grayHover);
+    transition: .2s;
+}
+
+.liked{
+    background-color: var(--red) !important;
+    border-radius: 30px;
+}
+
+.replied{
+    background-color: var(--lightblue) !important;
+    border-radius: 30px;
+}
+
+.reposted{
+    background-color: var(--green) !important;
+    border-radius: 30px;
+}
+
+.reply-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.reply-container textarea{
+    font-size: var(--font-size_title);
+    background-color: transparent;
+    border: none;
+    resize: none;
+    width: 100%;
+    color: var(--white);
+}
+
+.reply-container textarea:focus{
+    outline: none;
+}
+
+.reply-container .buttonGeneric{
+    font-size: var(--font-size_small);
+}
+

@@ -1,0 +1,74 @@
+.login-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.login-container .title{
+    font-size: var(--font-size_big);
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 10px;
+
+    /* background-color: var(--grayHover);
+    border-radius: 30px;
+    padding: var(--padding-2) 0; */
+}
+
+.login-container_changeAvatar-container{
+    display: flex;
+    width: max-content;
+    height: max-content;
+}
+
+.login-container_changeAvatar-container .tweet-avatar img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.login-container_groupInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    outline: 1px solid var(--gray);
+    border-radius: 30px;
+}
+
+.login-container form input[type=text]{
+    background-color: var(--grayDark);
+    border: none;
+    padding: 5px 0 5px 10px;
+    color: var(--white);
+    border-radius: 30px;
+    font-size: var(--font-size_title);
+}
+
+.login-container form input[type=text]:focus{
+    outline: 2px solid var(--lightblue);
+}
+
+#login-container__changeAvatar{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.login-container_form button{
+    margin-top: 30px;
+    font-size: var(--font-size_title);
+}

@@ -1,0 +1,78 @@
+.aside-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.aside-nav__upContainer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aside-nav__downContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.aside-nav__downContainer article{ 
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--paddingLeft);
+    border-radius: 30px;
+}
+
+.aside-nav__downContainer article:hover{
+    background-color: var(--grayHover);
+}
+
+/* para el avatar */
+.aside-nav__downContainer article .tweet-avatar img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.aside-nav__userInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.aside-nav__userInfo .userName{
+    color: var(--white);
+    font-size: var(--font-size_small);
+}
+
+.aside-nav__userInfo .userNickname{
+    color: var(--gray);
+    font-size: var(--font-size_small);
+}
+
+.aside-nav__optionBtn-container{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside-nav__optionBtn-container img{
+    height: 15px;
+}
+
+.toggleOptions-container{
+    position: absolute;
+    top: -40px;
+    right: 0;
+}

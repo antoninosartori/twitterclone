@@ -1,0 +1,42 @@
+.home-tweetContainer .home-tweetContainer_writeTweetContainer{
+    margin-bottom: 50px ;
+}
+
+.home-whatHappend{
+    position: fixed;
+    right: 0;
+}
+
+.home-whatHappend form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.home-whatHappend form .formGroup{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--grayDark);
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
+.home-whatHappend form .formGroup img{
+    height: var(--fontSize_title);
+}
+
+.home-whatHappend form .formGroup input{
+    background-color: transparent;
+    font-size: var(--fontSize_subtitle);
+    border: none;
+    color: var(--white);
+}
+
+.home-whatHappend form .formGroup input:focus{
+    outline: none;
+}

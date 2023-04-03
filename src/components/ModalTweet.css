@@ -1,0 +1,35 @@
+.modal-container{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    left: 25vw;
+    padding: var(--padding-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content{
+    height: 50%;
+    width: 50%;
+    padding: var(--padding-2);
+    background-color: var(--blackLight);
+    border-radius: 30px;
+}
+
+.modal-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-item{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.modal-item .tweet-body_header{
+    flex-direction: column;
+    align-items: flex-start;
+}

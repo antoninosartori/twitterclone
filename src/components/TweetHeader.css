@@ -1,0 +1,33 @@
+.tweet-body_header{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tweet-body_header .tweet-body_header_userName{
+    font-weight: bold;
+    font-size: var(--fontSize_subtitle);
+    transition: .2s;
+}
+
+.tweet-body_header .tweet-body_header_userNickname{
+    font-weight: normal;
+    font-size: var(--fontSize_small);
+    color: var(--gray);
+    transition: .2s;
+}
+
+.tweet-body_header input.tweet-body_header_userNickname{
+    font-size: var(--fontSize_small) !important;
+}
+
+.tweet-body_header input.tweet-body_header_userName:hover, .tweet-body_header input.tweet-body_header_userNickname:hover{
+    background-color: var(--grayHover);
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.writeTweet-header input{
+    padding: 5px !important;
+    width: 120px !important;
+}

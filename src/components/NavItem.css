@@ -1,0 +1,30 @@
+.navItem-container a{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    border-radius: 30px;
+    padding: 10px 25px 10px 10px;
+    gap: 15px;
+}
+
+.navItem-container img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.navItem-container h2{
+    color: var(--white);
+    font-size: var(--fontSize_title);
+    font-family: var(--fontPrimary);
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.navItem-container .active h2{
+    font-weight: bold;
+}
+
+.navItem-container:hover a{
+    background-color: #0f0f0f;
+}

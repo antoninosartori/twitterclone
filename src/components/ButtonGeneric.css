@@ -1,0 +1,16 @@
+.buttonGeneric{
+    width: max-content;
+    border: none;
+    border-radius: 30px;
+    padding: 6px 20px;
+    font-size: var(--font-size_title);
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.buttonGeneric:hover{
+    opacity: .8;
+}
